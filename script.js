@@ -99,3 +99,8 @@ document.addEventListener("keydown", e => {
 });
 
 loadWords();
+input.focus();
+
+document.body.addEventListener("click", () => {
+  input.focus();
+});
