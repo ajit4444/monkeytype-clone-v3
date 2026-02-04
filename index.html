@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Monkeytype Clone v3</title>
+  <meta charset="UTF-8">
+  <title>Monkeytype Clone</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body onclick="document.getElementById('input').focus()">
+
   <div class="top">
     <button onclick="setTime(15)">15</button>
     <button onclick="setTime(30)">30</button>
@@ -21,15 +23,17 @@
       acc <span id="acc">100</span>%
     </div>
 
+    <!-- 👇 YE SABSE IMPORTANT -->
     <div id="words"></div>
     <div id="caret"></div>
 
-    <input type="text" id="input" autofocus autocomplete="off" />
+    <input type="text" id="input" autocomplete="off">
     <p class="hint">tab to restart</p>
   </div>
 
   <div id="result" class="hidden"></div>
 
+  <!-- 👇 scripts hamesha END me -->
   <script src="words.js"></script>
   <script src="script.js"></script>
 </body>
