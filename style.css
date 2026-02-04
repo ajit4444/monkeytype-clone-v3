@@ -63,7 +63,12 @@ body {
   51%,100% { opacity: 0; }
 }
 
-input { opacity: 0; }
+input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
 
 #result {
   text-align: center;
