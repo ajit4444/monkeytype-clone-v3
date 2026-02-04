@@ -50,7 +50,19 @@ input.addEventListener("input", () => {
     }
 
     spans[index].classList.remove("active");
-    index++;
+    index++;let currentSpan = spans[index - 1];
+let nextSpan = spans[index];
+
+if (nextSpan) {
+  let currentTop = currentSpan.offsetTop;
+  let nextTop = nextSpan.offsetTop;
+
+  if (nextTop > currentTop) {
+    lineOffset += 48; // line height
+    wordsDiv.style.transform = `translateY(-${lineOffset}px)`;
+  }
+}
+
     if (spans[index]) spans[index].classList.add("active");
     input.value = "";
     updateStats();
