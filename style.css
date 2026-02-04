@@ -46,6 +46,7 @@ body {
   height: 96px;              /* 2 lines only */
   overflow: hidden;
   position: relative;
+  transition: transform 0.15s ease-out;
 }
 
 .correct { color: #d1d0c5; }
