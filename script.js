@@ -1,3 +1,4 @@
+let lineOffset = 0;
 let wordsDiv = document.getElementById("words");
 let input = document.getElementById("input");
 let timeEl = document.getElementById("time");
