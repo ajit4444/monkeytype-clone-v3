@@ -43,7 +43,9 @@ body {
 #words {
   font-size: 28px;
   line-height: 48px;
-  margin: 40px 0;
+  height: 96px;              /* 2 lines only */
+  overflow: hidden;
+  position: relative;
 }
 
 .correct { color: #d1d0c5; }
