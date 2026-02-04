@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Monkeytype Clone v3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top">
+    <button onclick="setTime(15)">15</button>
+    <button onclick="setTime(30)">30</button>
+    <button onclick="setTime(60)" class="active">60</button>
+  </div>
+
+  <div class="container">
+    <h1 class="logo">monkeytype</h1>
+
+    <div id="stats">
+      <span id="time">60</span>s |
+      wpm <span id="wpm">0</span> |
+      acc <span id="acc">100</span>%
+    </div>
+
+    <div id="words"></div>
+    <div id="caret"></div>
+
+    <input type="text" id="input" autofocus autocomplete="off" />
+    <p class="hint">tab to restart</p>
+  </div>
+
+  <div id="result" class="hidden"></div>
+
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
